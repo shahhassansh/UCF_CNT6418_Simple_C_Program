@@ -18,18 +18,18 @@ int main()
 	printf("Age in Month  = %f\n",agem);
 	}
 	
-	if (height < 0)
+	if (height <= 0)
 	printf("Height value is incorrect\n");
-	else if (height >= 0) {
+	else if (height > 0) {
     float heightf = height * 0.0833333;
 	printf("Height in feet = %f\n",heightf);
 	}
 	
-	if (height < 0 && weight < 0)
+	if (height <= 0 && weight <= 0)
 	printf("Incorrect Weight Value\n");
-	else if (weight < 0) 
+	else if (weight <= 0) 
 		printf("Incorrect Weight Value\n");
-	else if (height >= 0 && weight >=0){
+	else if (height > 0 && weight >0){
 	float BMI = (703 * weight) / (height * height);
 	printf("BMI = %f\n",BMI);	
 	}
